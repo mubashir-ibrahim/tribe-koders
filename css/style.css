@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --white-color : #fff ;
+    --black-color : rgb(0, 0, 0) ;
+    --para-color : #131314;
+    --light-red-color : #f06862 ;
+    --light-green-color : #b4efea ;
+    --light-gray-color : #f5f5f5 ;
+    --purple-color : #62379b ;
+    --brown-color : #ce6d44 ;
+    --yellow-color : #ebac39 ;
+    --testimonial-bg-color : #56dae2  ;
+    
+
+}
+.black{
+    color: var(--black-color);
+}
+h1{
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p , span , a {
+    font-size: 15px;
+}
+.text-center {
+    text-align: center;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.capital {
+    text-transform: capitalize;
+}
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-items: center;
+}
+header{
+    height: 660px;
+    /* background-color:  var(--para-color); */
+    background:linear-gradient(90deg, #ffcc66, #ff33cc, #663399, #0099cc, #00cc99);
+	background-size: 1000% 1000%;
+	animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+header .navbar .navbar-collapse{
+    justify-content: center;
+    
+}
+header .navbar .navbar-collapse .nav-item a{
+    color: var(--white-color);
+    font-size: 17px;
+    margin-inline: 22px;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+.hero-banner-section .hero-content{
+    color: var(--white-color);
+    padding-right: 180px;
+}
+.hero-banner-section .hero-banner-content{
+    align-items: center;
+    padding: 40px 0px;
+}
+.hero-banner-section .pay-monthly-heading a ,  .hero-banner-section .pay-monthly-heading span{
+    font-size: 50px;
+    color: var(--white-color);
+    
+}
+.company-logos-section a{
+    margin-inline: 21px;
+}
+.company-logos-section h4{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.second-banner-section {
+    margin-top: 80px;
+}
+.second-banner-section .second-banner-child{
+    background-color: var(--light-gray-color);
+    padding: 40px 0px;
+
+}
+.second-banner-section .second-banner-image{
+    width: 400px;
+    padding-inline: 30px;
+}
+.second-banner-section .second-banner-content {
+    padding-inline: 162px;
+}
+.second-banner-section .second-banner-content p:nth-child(1){
+    font-weight: 700;
+}
+.second-banner-section .second-banner-content p:nth-child(2){
+    color: var(--para-color);
+}
+.monthly-pay-section .services-card{
+    background-color: var(--light-red-color);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px 0px;
+    height: 240px;
+    color: var(--white-color);
+}
+.monthly-pay-section .monthly-pay-content {
+    margin-top: 60px;
+}
+.monthly-pay-section .services-card i {
+    font-size: 30px;
+    padding: 15px 0px;
+}
+.monthly-pay-section .services-card p {
+    padding-right: 20px;
+}
+section.ideas-content-section {
+    padding: 50px 0px;
+    background-color: var(--light-gray-color);
+    margin: 60px 0px;
+}
+section.ideas-content-section .ideas-content{
+    padding-inline: 380px;
+}
+section.ideas-content-section .ideas-content p {
+    font-weight: 700;
+}
+.experties-section .service-providing-cards{
+    background-color: var(--light-green-color);
+    color: var(--para-color);
+    padding: 20px;
+    margin-top: 30px;
+
+}
+.experties-section .service-providing-cards h4{
+    font-size: 24px;
+    color: var(--black-color);
+    padding-bottom: 30px;
+}
+.experties-section .service-providing-cards i {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.links-animation-section {
+    background: linear-gradient(233deg, #ff33cc, #ffcc66);
+    margin: 30px 0px;
+    color: var(--white-color);
+    padding: 100px 0px;
+
+}
+.links-animation-section .size-27{
+    font-size: 27px;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--white-color);
+}
+.links-animation-section ul li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.links-animation-section p {
+    font-weight: 400;
+}
+.links-animation-section ul li:last-child{
+    margin-top: 40px;
+}
+.links-animation-section li a.get-started-btn {
+    background-color: white;
+    color: var(--brown-color) ;
+    padding: 25px 40px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.links-animation-section li a.get-started-btn:hover{
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    transition: 300ms ease-in;
+}
+.our-recent-work-section{
+    margin-top: 60px;
+}
+.our-recent-work-section .recent-work-cards{
+    padding: 35px 0px;
+}
+
+.testimonial-cards-section{
+    background: var(--testimonial-bg-color);
+    padding: 50px 0px;
+    margin-top: 30px;
+}
+
+.testimonial-cards-section .testimonial-card-parent{
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 50px;
+}
+.testimonial-cards-section .testimonial-card-parent .stars-div{
+    color: var(--yellow-color);
+    padding: 20px 0px;
+}
+.testimonial-cards-section .client-say-heading{
+    color: var(--white-color);
+    padding-bottom: 20px;
+}
+.testimonial-cards-section .client-say-heading h3 {
+
+    font-weight: 700;
+}
